@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300&display=swap');
+
+body {
+    margin:0px;
+    margin-right:0px;
+    backdrop-filter: blur(8px);
+}
+a {
+    text-decoration: none;
+}
+.title{
+    position: fixed;
+    left:80px;
+    color: white;
+    width:440px;
+}
+.title .big_title{
+    font-family: 'Itim', cursive;
+    font-size: 50px;
+}
+
+.title .small_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+.header .menu{
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    font-size: 50px;
+    right:80px;
+    height:110px;
+    color: white;
+
+}
+.menu A {
+    border-right: 2px solid;
+    color: white;
+    padding:42px;
+}
+.menu A:first-of-type {
+    border-left: 2px solid;
+}
+.menu A:hover{
+    background-color: #000000;
+    opacity: 0.7;
+}
+.header .background{
+    position: fixed;
+    left:0;
+    background-color: #000000;
+    opacity: 0.3;
+    width:100vw;
+    height:110px;
+}
+.content{
+    height:100vh;
+}
+.content .mainPhoto{
+    height:100vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    background-color: #000000;
+    opacity: 0.7;
+    width:100%;
+    height: 160px;
+    overflow-y: auto;
+}
+.footer IMG{
+    height: 100px;
+    padding: 30px;
+
+}
+.footer IMG:hover{
+    height:120px;
+    padding:20px;
+}
+
+.window{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.window .content{
+    margin:50px auto 0px auto;
+    width:1000px;
+    height: 386px;
+    padding:0px;
+    background-color: #fefefe;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.window .content img{
+    width: 490px;
+    margin: 10px;
+    float: left;
+}
+.window .content p{
+    margin: 10px;
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+}
+
+.window .content A{
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    position:relative;
+    left: 470px;
+    bottom: 90px;
+    border: 1px solid;
+}
+
+@media screen and (max-device-width: 1030px){
+    .window .content{
+        width:95vw;
+        display: table;
+    }
+    .window .content img{
+        margin: 1vw;
+        float: center;
+    }
+    .window .content p{
+        margin:1vw;
+    }
+    .window .content .contacts{
+        margin:1vw;
+    }
+
+    @media screen and (orientation:landscape){
+        .footer{
+            height:80px;
+        }
+        .footer IMG{
+            height: 50px;
+            padding: 15px;
+        }
+        .footer IMG:hover{
+            height:60px;
+            padding:10px;
+        }
+        .header .background{
+            height:55px;
+        }
+        .title{
+            left: 40px;
+            top: 10px;
+        }
+        .title .big_title{
+            font-size: 25px;
+        }
+
+        .title .small_title{
+            font-size: 15px;
+        }
+        .header .menu{
+            font-size: 25px;
+            right:0px;
+            height:55px;
+        }
+        .menu A {
+            padding:21px;
+            border-right: 0px;
+        }
+        .window .content{
+            width:70vw;
+            height:auto;
+        }
+        .window .content img{
+            height:30vh;
+            width:auto;
+        }
+        .window .content p{
+            font-size:40px;
+        }
+        .window .content .contacts{
+            font-size:30px;
+        }
+    }
+    @media screen and (orientation:portrait){
+        .content .mainPhoto{
+            padding-top: 25vh;
+            width:100vw;
+            height:auto;
+        }
+        .footer{
+            height:380px;
+        }
+        .footer IMG{
+            height: 200px;
+            padding: 60px;
+        }
+        .footer IMG:hover{
+            height:240px;
+            padding:40px;
+        }
+        .window .content{
+            height:auto;
+        }
+        .window .content img{
+            float: center;
+            width: 35vw;
+        }
+        .window .content p{
+            font-size: 60px;
+        }
+        .window .content .contacts{
+            font-size: 40px;
+        }
+    }
+
+}
